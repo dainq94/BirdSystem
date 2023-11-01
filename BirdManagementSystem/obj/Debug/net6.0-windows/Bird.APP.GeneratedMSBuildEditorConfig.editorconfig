@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bird.APP
-build_property.ProjectDir = F:\GitSource\BirdProjectWF\BirdManagementSystem\
+build_property.ProjectDir = E:\C#\C#_WindowsForm\Group_PRN\BirdManagementSystem\

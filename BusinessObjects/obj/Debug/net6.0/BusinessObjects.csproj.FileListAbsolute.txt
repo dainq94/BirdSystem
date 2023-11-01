@@ -26,3 +26,17 @@ F:\GitSource\BirdProjectWF\BusinessObjects\obj\Debug\net6.0\refint\BusinessObjec
 F:\GitSource\BirdProjectWF\BusinessObjects\obj\Debug\net6.0\BusinessObjects.pdb
 F:\GitSource\BirdProjectWF\BusinessObjects\obj\Debug\net6.0\BusinessObjects.genruntimeconfig.cache
 F:\GitSource\BirdProjectWF\BusinessObjects\obj\Debug\net6.0\ref\BusinessObjects.dll
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\bin\Debug\net6.0\BusinessObjects.deps.json
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\bin\Debug\net6.0\BusinessObjects.runtimeconfig.json
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\bin\Debug\net6.0\BusinessObjects.dll
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\bin\Debug\net6.0\BusinessObjects.pdb
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.AssemblyReference.cache
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfo.cs
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.dll
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\refint\BusinessObjects.dll
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.pdb
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\BusinessObjects.genruntimeconfig.cache
+E:\C#\C#_WindowsForm\Group_PRN\BusinessObjects\obj\Debug\net6.0\ref\BusinessObjects.dll

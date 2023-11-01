@@ -52,6 +52,7 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(232, 27);
             txtUsername.TabIndex = 1;
+            txtUsername.Text = "admin";
             txtUsername.TextChanged += textBox1_TextChanged;
             // 
             // txtPassword
@@ -60,6 +61,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(232, 27);
             txtPassword.TabIndex = 3;
+            txtPassword.Text = "123456";
             // 
             // label2
             // 

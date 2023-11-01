@@ -21,9 +21,14 @@ namespace BirdService
             return _userRepository.getAllUsers();
         }
 
-        public User GetUserByEmail(string email)
+        public User GetUserByUsername(string user)
         {
-            return _userRepository.getUserByEmail(email);
+            return _userRepository.getUserByEmail(user);
+        }
+
+        public void UpdateUser(User user)
+        {
+            _userRepository.UpdateUser(user);
         }
 
         public bool UserExit(string usernameOrEmailOrPhone)
@@ -33,12 +38,7 @@ namespace BirdService
 
         List<User> IUserService.GetAllUsers()
         {
-            throw new NotImplementedException();
-        }
-
-        User IUserService.GetUserByEmail(string email)
-        {
-            throw new NotImplementedException();
+            return _userRepository.getAllUsers();
         }
     }
 }

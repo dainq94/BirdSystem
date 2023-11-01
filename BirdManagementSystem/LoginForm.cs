@@ -6,7 +6,7 @@ namespace Bird.APP
     public partial class LoginForm : Form
     {
         private readonly IUserService userService = null;
-        private string ADMIN_ROLE = "AD";
+        private string ADMIN_ROLE = "Admin";
 
         public LoginForm()
         {
@@ -26,22 +26,37 @@ namespace Bird.APP
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            User user = new User();
             try
             {
 
-                if (txtUsername.Text.Length == 0)
-                    throw new Exception("Please enter the email/username/phone!");
-                if (txtPassword.Text.Length == 0)
-                    throw new Exception("Please enter the password!");
+                //if (txtUsername.Text.Length == 0)
+                //    throw new Exception("Please enter the email/username/phone!");
+                //if (txtPassword.Text.Length == 0)
+                //    throw new Exception("Please enter the password!");
 
-                user = userService.GetUserByEmail(txtUsername.Text);
+                User user = userService.GetUserByUsername(txtUsername.Text.Trim());
                 if (user != null)
                 {
+                    //switch(user.Role)
+                    //{
+                    //    case "User":
+                    //        CustomerForm customerForm = new CustomerForm();
+                    //        customerForm.Show();
+                    //        this.Hide();
+                    //        break;
+                    //    case "Admin":
+                    //        break;
+                    //    case "Staff":
+                    //        MessageBox.Show("You are not permission.");
+                    //        break;
+                    //}
+
                     GlobalData.AuthenticatedUser = user;
-                    if (user.Role.Equals("US")) // CUSTOMER
+                    if (user.Role.Equals("User")) // CUSTOMER
                     {
                         CustomerForm customerFrom = new CustomerForm();
+                        customerFrom.Show();
+                        this.Hide();
                         //regis.Text = "Welcome " + GlobalData.AuthenticatedUser.Name + "!";
 
                         //Custo.FormClosed += delegate
@@ -54,7 +69,7 @@ namespace Bird.APP
                         //frmCustomer.Show();
 
                     }
-                    else if (user.Role.Equals("STAFF")) // STAFF
+                    else if (user.Role.Equals("Staff")) // STAFF
                     {
                         //frmStaff frmStaff = new frmStaff();
                         //frmStaff.FormClosed += delegate
@@ -70,8 +85,9 @@ namespace Bird.APP
                     }
                     else if (user.Role.Equals(ADMIN_ROLE)) //ADMIN
                     {
-                        CustomerForm customerFrom = new CustomerForm();
-                        customerFrom.ShowDialog();
+                        AdminForm adminForm = new AdminForm();
+                        adminForm.Show();
+                        this.Hide();
                         //var form = new frmAdmin();
                         //form.FormClosed += delegate
                         //{

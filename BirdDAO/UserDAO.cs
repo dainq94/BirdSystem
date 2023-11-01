@@ -5,7 +5,7 @@ namespace BirdDAO
 {
     public class UserDAO
     {
-        private static UserDAO instance;
+        private static UserDAO instance = null;
         public static UserDAO Instance
         {
             get
@@ -17,12 +17,12 @@ namespace BirdDAO
                 return instance;
             }
         }
-        public User GetUserByEmail(String email)
+        public User GetUserByUsername(string user)
         {
             try
             {
                 var dbContent = new BirdContext();
-                return dbContent.Users.SingleOrDefault(m => m.Email.Equals(email));
+                return dbContent.Users.SingleOrDefault(m => m.Username.Equals(user));
             }
             catch (Exception ex)
             {
@@ -64,20 +64,40 @@ namespace BirdDAO
             }
         }
 
-        public void Create(User entity)
+        public void UpdateUser(User user)
         {
             try
             {
-                using (var context = new BirdContext())
+                var dbContent = new BirdContext();
+                if(user != null)
                 {
-                    if (Instance.Exist(entity.Username) || Instance.Exist(entity.Email))
-                    {
-                        throw new Exception("Duplicated entity (username or email).");
-                    }
+                    dbContent.Users.Update(user);
+                    dbContent.SaveChanges();
+                }               
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
-                    context.Users.Add(entity);
-                    context.SaveChanges();
-                }
+        public void Create(User user)
+        {
+            try
+            {
+                //using (var context = new BirdContext())
+                //{
+                //    if (Instance.Exist(entity.Username) || Instance.Exist(entity.Email))
+                //    {
+                //        throw new Exception("Duplicated entity (username or email).");
+                //    }
+
+                //    context.Users.Add(entity);
+                //    context.SaveChanges();
+                //}
+
+                var dbContent = new BirdContext();
+                dbContent.Users.Add(user);
             }
             catch (Exception ex)
             {
@@ -135,6 +155,6 @@ namespace BirdDAO
                 throw new Exception(ex.Message);
             }
         }
-
+        
     }
 }

@@ -8,5 +8,6 @@ namespace BirdRepository
         List<User> getAllUsers();
         bool UserExit(string usernameOrEmailOrPhone);
         void Create(User user);
+        void UpdateUser(User user);
     }
 }

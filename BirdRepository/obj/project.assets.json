@@ -2903,19 +2903,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\quocd\\.nuget\\packages\\": {}
+    "C:\\Users\\phamkhanh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\GitSource\\BirdProjectWF\\BirdRepository\\BirdRepository.csproj",
+      "projectUniqueName": "E:\\C#\\C#_WindowsForm\\Group_PRN\\BirdRepository\\BirdRepository.csproj",
       "projectName": "BirdRepository",
-      "projectPath": "F:\\GitSource\\BirdProjectWF\\BirdRepository\\BirdRepository.csproj",
-      "packagesPath": "C:\\Users\\quocd\\.nuget\\packages\\",
-      "outputPath": "F:\\GitSource\\BirdProjectWF\\BirdRepository\\obj\\",
+      "projectPath": "E:\\C#\\C#_WindowsForm\\Group_PRN\\BirdRepository\\BirdRepository.csproj",
+      "packagesPath": "C:\\Users\\phamkhanh\\.nuget\\packages\\",
+      "outputPath": "E:\\C#\\C#_WindowsForm\\Group_PRN\\BirdRepository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\quocd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phamkhanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2929,11 +2929,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\GitSource\\BirdProjectWF\\BirdDAO\\BirdDAO.csproj": {
-              "projectPath": "F:\\GitSource\\BirdProjectWF\\BirdDAO\\BirdDAO.csproj"
+            "E:\\C#\\C#_WindowsForm\\Group_PRN\\BirdDAO\\BirdDAO.csproj": {
+              "projectPath": "E:\\C#\\C#_WindowsForm\\Group_PRN\\BirdDAO\\BirdDAO.csproj"
             },
-            "F:\\GitSource\\BirdProjectWF\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "F:\\GitSource\\BirdProjectWF\\BusinessObjects\\BusinessObjects.csproj"
+            "E:\\C#\\C#_WindowsForm\\Group_PRN\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "E:\\C#\\C#_WindowsForm\\Group_PRN\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }
@@ -2963,7 +2963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -12,7 +12,10 @@ namespace BirdRepository
         => UserDAO.Instance.GetAllUsers();
 
         public User getUserByEmail(string email)
-        => UserDAO.Instance.GetUserByEmail(email);
+        => UserDAO.Instance.GetUserByUsername(email);
+
+        public void UpdateUser(User user)
+        => UserDAO.Instance.UpdateUser(user);
 
         public bool UserExit(string usernameOrEmailOrPhone)
         {
